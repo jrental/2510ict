@@ -1,8 +1,8 @@
 # langchain_streamlit_tool.py
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 import streamlit as st
 
@@ -89,4 +89,5 @@ if prompt := st.chat_input():
 
     result = st.chat_message( "assistant" ).write_stream( response )
     st.session_state[ "messages" ].append( AIMessage( result ) )
+
  
